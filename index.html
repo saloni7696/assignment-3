@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza Order Form</h1>
+        <form id="pizza-form">
+            <label for="size">Select Pizza Size:</label>
+            <select id="size" name="size">
+                <option value="">-- Please select --</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <label for="crust">Select Crust Type:</label>
+            <select id="crust" name="crust">
+                <option value="">-- Please select --</option>
+                <option value="thin">Thin</option>
+                <option value="thick">Thick</option>
+                <option value="stuffed">Stuffed</option>
+            </select>
+            <label for="toppings">Select Toppings (choose multiple):</label>
+            <select id="toppings" name="toppings" multiple>
+                <option value="cheese">Extra Cheese</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="mushrooms">Mushrooms</option>
+                <option value="sausage">Sausage</option>
+                <option value="onions">Onions</option>
+                <option value="peppers">Peppers</option>
+            </select>
+            <label for="sauce">Select Sauce:</label>
+            <select id="sauce" name="sauce">
+                <option value="">-- Please select --</option>
+                <option value="Pizza Sauce">Pizza Sauce</option>
+                <option value="BBQ Sauce">BBQ Sauce</option>
+                <option value="Alfredo Sauce">Alfredo Sauce</option>
+                <option value="Hearty Marinara Sauce">Hearty Marinara Sauce</option>
+                <option value="Ranch Dressing">Ranch Dressing</option>
+                <option value="Garlic Parmesan Sauce">Garlic Parmesan Sauce</option>
+                <option value="Light">Light</option>
+            </select>
+            <label for="spicy-level">How Spicy Do You Want Your Pizza To be?</label>
+            <input type="range" id="spicy-level" name="spicy-level" min="0" max="10" value="5">
+            <label for="coupon-code">Enter Coupon Code (optional):</label>
+            <input type="text" id="coupon-code" name="coupon-code" placeholder="Enter coupon code">
+            <label for="quantity">Select Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button type="button" id="order-button">Order</button>
+        </form>
+
+    </div>
+</body>
+</html>
